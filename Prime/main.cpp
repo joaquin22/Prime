@@ -14,11 +14,18 @@ using namespace std;
 
 
 void Euclidiana(vector< pair< string , vector<float> > > image){
-    float resp;
-    for (int i = 0; i<image.size();i++){
-        for (int j = 0;j<16;j++){
-            resp = resp + pow((image[i].second[j]-image[i+1].second[j]),2);
+    vector<float> res;
+    float resp = 0,raiz;
+    for (int i = 0; i < image.size();i++){
+        for (int j = 0; j < image.size();j++){
+            for (int e = 0; e < 16;e++){
+                if(image[i].first == image[j].first) break;
+                resp = resp + pow((image[i].second[e] - image[j].second[e]),2);
+            }
+            raiz = sqrt(resp);
+            res.push_back(raiz);
         }
+
     }
 }
 
@@ -45,10 +52,6 @@ vector< pair< string , vector<float> > > leerimagen(const char * nombre){
             }
         }
         file.close();
-        cout<<"First: "<<image[6].first<<endl;
-        for(int i = 0;i<16;i++){
-            cout<<"First: "<<image[6].second[i]<<endl;
-        }
     }else{
         cout<<"No se pudo abrir"<<endl;
     }
@@ -277,7 +280,8 @@ public:
 int main()
 {
 
-    leerimagen("salidaHaar.txt");
+    vector< pair< string , vector<float> > > img = leerimagen("salidaHaar.txt");
+    Euclidiana(img);
     Grafo<int,int>  G;
     G.Add_Vertex(0);
     G.Add_Vertex(1);

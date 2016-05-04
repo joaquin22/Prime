@@ -13,20 +13,12 @@
 using namespace std;
 
 
-void Euclidiana(vector< pair< string , vector<float> > > image){
-    vector<float> res;
-    float resp = 0,raiz;
-    for (int i = 0; i < image.size();i++){
-        for (int j = 0; j < image.size();j++){
-            for (int e = 0; e < 16;e++){
-                if(image[i].first == image[j].first) break;
-                resp = resp + pow((image[i].second[e] - image[j].second[e]),2);
-            }
-            raiz = sqrt(resp);
-            res.push_back(raiz);
-        }
-
+float Euclidiana(vector< pair< string , vector<float> > > &image, int i,int j){
+    float resp = 0;
+    for (int e = 0; e < 16;e++){
+        resp = resp + pow((image[i].second[e] - image[j].second[e]),2);
     }
+    return sqrt(resp);
 }
 
 
@@ -147,9 +139,11 @@ public:
     {
         typedef typename list< Arista<V,E> >::iterator ITERATOR;
         ITERATOR it = m_Aristas.begin();
+        os<<"\""<<m_Dato<<"\""<<"[image=\""<<m_Dato<<"\", label=\"\"];"<<endl;
         for( ; it!= m_Aristas.end(); ++it){
             if(it->m_pIni->m_Dato == m_Dato){
-                os<<m_Dato<<"->"<< it->m_pDes->m_Dato  <<" [label=\""<< it->m_Dato<<"\" ]"<<endl;
+                os<<"\""<<m_Dato<<"\""<<"->"<<"\""<< it->m_pDes->m_Dato<<"\""  <<"[minlen="<< (int)(it->m_Dato / 1000)<<" label=\""<< it->m_Dato<<"\" ]"<<endl;
+                //weight="<< (int)(it->m_Dato / 1000)<<"
             }
 
         }
@@ -166,7 +160,7 @@ public:
     Grafo(){};
     void Add_Vertex(V v1)
     {
-        if(find_vertex(v1) != 0)return;
+        if(find_vertex(v1) != 0) return;
         m_vertices.push_back(Vertex<V,E>(v1));
 
     }
@@ -199,9 +193,9 @@ public:
     {
         ofstream file(p);
 
-        file<<"digraph {"<<endl;
+        file<<"digraph {ranksep=3.75;"<<endl;
 
-        file<<"edge [dir=none];"<<endl;
+        file<<"edge [dir=none ];"<<endl;
 
         typedef typename list< Vertex<V,E> >::iterator ITERATOR;
         ITERATOR it = m_vertices.begin();
@@ -257,7 +251,7 @@ public:
         while(cant < m_vertices.size() ){
 
             if(!S.formaCiclo(minHeap.top(),1, p)){
-                cout<<"entra"<<p->m_Dato<<endl;
+                //cout<<"entra"<<p->m_Dato<<endl;
                 S.Add_Vertex(p->m_Dato);
                 //S.m_vertices.back().changeTag(1);
                 //cout<<S.m_vertices.back().tag<<endl;
@@ -281,40 +275,54 @@ int main()
 {
 
     vector< pair< string , vector<float> > > img = leerimagen("salidaHaar.txt");
-    Euclidiana(img);
-    Grafo<int,int>  G;
-    G.Add_Vertex(0);
-    G.Add_Vertex(1);
-    G.Add_Vertex(2);
-    G.Add_Vertex(3);
-    G.Add_Vertex(4);
-    G.Add_Vertex(5);
-    G.Add_Vertex(6);
-    G.Add_Vertex(7);
-    G.Add_Vertex(8);
-    G.Add_Arista(0,1,4);
-    G.Add_Arista(0,7,8);
-    G.Add_Arista(1,2,8);
-    G.Add_Arista(1,7,11);
-    G.Add_Arista(2,8,2);
-    G.Add_Arista(2,3,7);
-    G.Add_Arista(3,4,9);
-    G.Add_Arista(3,5,10);
-    G.Add_Arista(5,2,4);
-    G.Add_Arista(5,4,10);
-    G.Add_Arista(6,5,2);
-    G.Add_Arista(6,8,6);
-    G.Add_Arista(7,6,1);
-    G.Add_Arista(7,8,7);
+    Grafo<string,float>  G;
+    for (int i = 0; i < img.size();i++){
+        G.Add_Vertex(img[i].first);
+    }
 
+    for (int i = 0; i < img.size();i++){
+        for (int j = 0; j < img.size();j++){
+            if(i != j) {
+                G.Add_Arista(img[i].first,img[j].first,Euclidiana(img,i,j));
+            }
+        }
+    }
+
+/*
+    G.Add_Vertex("a0");
+    G.Add_Vertex("a1");
+    G.Add_Vertex("a2");
+    G.Add_Vertex("a3");
+    G.Add_Vertex("a4");
+    G.Add_Vertex("a5");
+    G.Add_Vertex("a6");
+    G.Add_Vertex("a7");
+    G.Add_Vertex("a8");
+    G.Add_Arista("a0","a1",4);
+    G.Add_Arista("a0","a7",8);
+    G.Add_Arista("a1","a2",8);
+    G.Add_Arista("a1","a7",11);
+    G.Add_Arista("a2","a8",2);
+    G.Add_Arista("a2","a3",7);
+    G.Add_Arista("a3","a4",9);
+    G.Add_Arista("a3","a5",10);
+    G.Add_Arista("a5","a2",4);
+    G.Add_Arista("a5","a4",10);
+    G.Add_Arista("a6","a5",2);
+    G.Add_Arista("a6","a8",6);
+    G.Add_Arista("a7","a6",1);
+    G.Add_Arista("a7","a8",7);
+*/
     G.printDot("normal.dot");
     G.Prim().printDot("prim.dot");
-    system("dot -Tpng normal.dot -o normal.png");
-    system("dot -Tpng prim.dot -o prim.png");
+//    cout<<"dibujando1"<<endl;
+//    system("dot -Tpng normal.dot -o normal.png");
+    cout<<"dibujando2"<<endl;
+    system("twopi -Tpng prim.dot -o prim.png");
     //G.Prim().print();
     //G.profundidad();
     //G.amplitud();
-    system("read");
+    //system("read");
     cout << "Hello world!" << endl;
     return 0;
 }

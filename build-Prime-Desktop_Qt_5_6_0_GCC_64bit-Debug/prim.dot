@@ -1,11 +1,334 @@
-digraph {
-edge [dir=none];
-0->1 [label="4" ]
-1->2 [label="8" ]
-2->8 [label="2" ]
-2->3 [label="7" ]
-5->2 [label="4" ]
-6->5 [label="2" ]
-7->6 [label="1" ]
-3->4 [label="9" ]
+digraph {ranksep=3.75;
+edge [dir=none ];
+"yalefaces/subject01.glasses"[image="yalefaces/subject01.glasses", label=""];
+"yalefaces/subject01.glasses"->"yalefaces/subject01.glasses.gif"[minlen=0 label="0" ]
+"yalefaces/subject01.glasses"->"yalefaces/subject01.happy"[minlen=0 label="498.537" ]
+"yalefaces/subject01.glasses.gif"[image="yalefaces/subject01.glasses.gif", label=""];
+"yalefaces/subject01.glasses.gif"->"yalefaces/subject12.rightlight"[minlen=2 label="2109.95" ]
+"yalefaces/subject01.happy"[image="yalefaces/subject01.happy", label=""];
+"yalefaces/subject01.normal"[image="yalefaces/subject01.normal", label=""];
+"yalefaces/subject01.normal"->"yalefaces/subject01.glasses.gif"[minlen=0 label="662.226" ]
+"yalefaces/subject01.normal"->"yalefaces/subject01.sleepy"[minlen=0 label="384.972" ]
+"yalefaces/subject01.normal"->"yalefaces/subject01.sad"[minlen=0 label="535.988" ]
+"yalefaces/subject01.sleepy"[image="yalefaces/subject01.sleepy", label=""];
+"yalefaces/subject01.sad"[image="yalefaces/subject01.sad", label=""];
+"yalefaces/subject01.wink"[image="yalefaces/subject01.wink", label=""];
+"yalefaces/subject01.wink"->"yalefaces/subject01.sleepy"[minlen=0 label="588.247" ]
+"yalefaces/subject01.wink"->"yalefaces/subject01.surprised"[minlen=0 label="670.453" ]
+"yalefaces/subject01.wink"->"yalefaces/subject01.noglasses"[minlen=1 label="1996.63" ]
+"yalefaces/subject01.surprised"[image="yalefaces/subject01.surprised", label=""];
+"yalefaces/subject01.surprised"->"yalefaces/subject02.centerlight"[minlen=2 label="2370.41" ]
+"yalefaces/subject01.noglasses"[image="yalefaces/subject01.noglasses", label=""];
+"yalefaces/subject12.rightlight"[image="yalefaces/subject12.rightlight", label=""];
+"yalefaces/subject12.rightlight"->"yalefaces/subject05.centerlight"[minlen=2 label="2330.79" ]
+"yalefaces/subject12.centerlight"[image="yalefaces/subject12.centerlight", label=""];
+"yalefaces/subject12.centerlight"->"yalefaces/subject12.rightlight"[minlen=1 label="1651.18" ]
+"yalefaces/subject05.centerlight"[image="yalefaces/subject05.centerlight", label=""];
+"yalefaces/subject05.centerlight"->"yalefaces/subject05.noglasses"[minlen=1 label="1600.88" ]
+"yalefaces/subject05.noglasses"[image="yalefaces/subject05.noglasses", label=""];
+"yalefaces/subject05.glasses"[image="yalefaces/subject05.glasses", label=""];
+"yalefaces/subject05.glasses"->"yalefaces/subject05.noglasses"[minlen=0 label="424.551" ]
+"yalefaces/subject05.glasses"->"yalefaces/subject05.happy"[minlen=0 label="228.239" ]
+"yalefaces/subject05.glasses"->"yalefaces/subject05.wink"[minlen=0 label="247.247" ]
+"yalefaces/subject05.happy"[image="yalefaces/subject05.happy", label=""];
+"yalefaces/subject05.wink"[image="yalefaces/subject05.wink", label=""];
+"yalefaces/subject05.wink"->"yalefaces/subject05.surprised"[minlen=0 label="479.33" ]
+"yalefaces/subject05.normal"[image="yalefaces/subject05.normal", label=""];
+"yalefaces/subject05.normal"->"yalefaces/subject05.wink"[minlen=0 label="222.556" ]
+"yalefaces/subject05.normal"->"yalefaces/subject05.sleepy"[minlen=0 label="200.86" ]
+"yalefaces/subject05.sleepy"[image="yalefaces/subject05.sleepy", label=""];
+"yalefaces/subject05.sad"[image="yalefaces/subject05.sad", label=""];
+"yalefaces/subject05.sad"->"yalefaces/subject05.sleepy"[minlen=0 label="78.2407" ]
+"yalefaces/subject05.surprised"[image="yalefaces/subject05.surprised", label=""];
+"yalefaces/subject08.surprised"[image="yalefaces/subject08.surprised", label=""];
+"yalefaces/subject08.surprised"->"yalefaces/subject05.wink"[minlen=2 label="2204.63" ]
+"yalefaces/subject08.surprised"->"yalefaces/subject13.glasses"[minlen=1 label="1590.39" ]
+"yalefaces/subject08.surprised"->"yalefaces/subject09.glasses"[minlen=1 label="1851.4" ]
+"yalefaces/subject13.glasses"[image="yalefaces/subject13.glasses", label=""];
+"yalefaces/subject13.glasses"->"yalefaces/subject13.sad"[minlen=0 label="303.162" ]
+"yalefaces/subject13.glasses"->"yalefaces/subject13.happy"[minlen=0 label="445.758" ]
+"yalefaces/subject13.glasses"->"yalefaces/subject13.noglasses"[minlen=0 label="549.153" ]
+"yalefaces/subject13.sad"[image="yalefaces/subject13.sad", label=""];
+"yalefaces/subject13.sad"->"yalefaces/subject13.sleepy"[minlen=0 label="561.271" ]
+"yalefaces/subject13.happy"[image="yalefaces/subject13.happy", label=""];
+"yalefaces/subject13.happy"->"yalefaces/subject13.normal"[minlen=0 label="515.501" ]
+"yalefaces/subject13.normal"[image="yalefaces/subject13.normal", label=""];
+"yalefaces/subject13.noglasses"[image="yalefaces/subject13.noglasses", label=""];
+"yalefaces/subject13.noglasses"->"yalefaces/subject13.wink"[minlen=0 label="548.404" ]
+"yalefaces/subject13.wink"[image="yalefaces/subject13.wink", label=""];
+"yalefaces/subject13.sleepy"[image="yalefaces/subject13.sleepy", label=""];
+"yalefaces/subject13.sleepy"->"yalefaces/subject13.surprised"[minlen=0 label="544.688" ]
+"yalefaces/subject13.surprised"[image="yalefaces/subject13.surprised", label=""];
+"yalefaces/subject09.glasses"[image="yalefaces/subject09.glasses", label=""];
+"yalefaces/subject09.glasses"->"yalefaces/subject15.wink"[minlen=1 label="1547.98" ]
+"yalefaces/subject08.sad"[image="yalefaces/subject08.sad", label=""];
+"yalefaces/subject08.sad"->"yalefaces/subject09.glasses"[minlen=1 label="1495.17" ]
+"yalefaces/subject15.wink"[image="yalefaces/subject15.wink", label=""];
+"yalefaces/subject15.sad"[image="yalefaces/subject15.sad", label=""];
+"yalefaces/subject15.sad"->"yalefaces/subject15.wink"[minlen=0 label="827.714" ]
+"yalefaces/subject15.happy"[image="yalefaces/subject15.happy", label=""];
+"yalefaces/subject15.happy"->"yalefaces/subject15.sad"[minlen=0 label="496.531" ]
+"yalefaces/subject15.happy"->"yalefaces/subject07.happy"[minlen=1 label="1651.79" ]
+"yalefaces/subject07.happy"[image="yalefaces/subject07.happy", label=""];
+"yalefaces/subject07.happy"->"yalefaces/subject07.noglasses"[minlen=1 label="1410.97" ]
+"yalefaces/subject07.noglasses"[image="yalefaces/subject07.noglasses", label=""];
+"yalefaces/subject07.noglasses"->"yalefaces/subject07.normal"[minlen=0 label="0" ]
+"yalefaces/subject07.noglasses"->"yalefaces/subject07.sleepy"[minlen=0 label="292.383" ]
+"yalefaces/subject07.normal"[image="yalefaces/subject07.normal", label=""];
+"yalefaces/subject07.sleepy"[image="yalefaces/subject07.sleepy", label=""];
+"yalefaces/subject07.sleepy"->"yalefaces/subject07.glasses"[minlen=1 label="1345.8" ]
+"yalefaces/subject07.sad"[image="yalefaces/subject07.sad", label=""];
+"yalefaces/subject07.sad"->"yalefaces/subject07.sleepy"[minlen=0 label="976.687" ]
+"yalefaces/subject07.wink"[image="yalefaces/subject07.wink", label=""];
+"yalefaces/subject07.wink"->"yalefaces/subject07.sleepy"[minlen=1 label="1131.28" ]
+"yalefaces/subject07.surprised"[image="yalefaces/subject07.surprised", label=""];
+"yalefaces/subject07.surprised"->"yalefaces/subject07.wink"[minlen=1 label="1046.21" ]
+"yalefaces/subject15.centerlight"[image="yalefaces/subject15.centerlight", label=""];
+"yalefaces/subject15.centerlight"->"yalefaces/subject07.normal"[minlen=1 label="1318.83" ]
+"yalefaces/subject15.centerlight"->"yalefaces/subject07.centerlight"[minlen=1 label="1539.33" ]
+"yalefaces/subject07.glasses"[image="yalefaces/subject07.glasses", label=""];
+"yalefaces/subject07.glasses"->"yalefaces/subject08.glasses"[minlen=1 label="1210.25" ]
+"yalefaces/subject08.glasses"[image="yalefaces/subject08.glasses", label=""];
+"yalefaces/subject08.glasses"->"yalefaces/subject08.normal"[minlen=0 label="0" ]
+"yalefaces/subject08.normal"[image="yalefaces/subject08.normal", label=""];
+"yalefaces/subject08.happy"[image="yalefaces/subject08.happy", label=""];
+"yalefaces/subject08.happy"->"yalefaces/subject08.normal"[minlen=1 label="1286.49" ]
+"yalefaces/subject08.happy"->"yalefaces/subject08.sleepy"[minlen=1 label="1125.41" ]
+"yalefaces/subject08.sleepy"[image="yalefaces/subject08.sleepy", label=""];
+"yalefaces/subject08.centerlight"[image="yalefaces/subject08.centerlight", label=""];
+"yalefaces/subject08.centerlight"->"yalefaces/subject08.sleepy"[minlen=1 label="1287.57" ]
+"yalefaces/subject15.normal"[image="yalefaces/subject15.normal", label=""];
+"yalefaces/subject15.normal"->"yalefaces/subject08.happy"[minlen=1 label="1336.02" ]
+"yalefaces/subject15.normal"->"yalefaces/subject09.centerlight"[minlen=2 label="2563.67" ]
+"yalefaces/subject03.sad"[image="yalefaces/subject03.sad", label=""];
+"yalefaces/subject03.sad"->"yalefaces/subject08.happy"[minlen=1 label="1422.99" ]
+"yalefaces/subject03.sad"->"yalefaces/subject03.sleepy"[minlen=0 label="427.357" ]
+"yalefaces/subject03.noglasses"[image="yalefaces/subject03.noglasses", label=""];
+"yalefaces/subject03.noglasses"->"yalefaces/subject03.sad"[minlen=0 label="406.892" ]
+"yalefaces/subject03.noglasses"->"yalefaces/subject03.normal"[minlen=0 label="0" ]
+"yalefaces/subject03.normal"[image="yalefaces/subject03.normal", label=""];
+"yalefaces/subject03.sleepy"[image="yalefaces/subject03.sleepy", label=""];
+"yalefaces/subject03.happy"[image="yalefaces/subject03.happy", label=""];
+"yalefaces/subject03.happy"->"yalefaces/subject03.sleepy"[minlen=0 label="357.605" ]
+"yalefaces/subject03.wink"[image="yalefaces/subject03.wink", label=""];
+"yalefaces/subject03.wink"->"yalefaces/subject03.sleepy"[minlen=0 label="627.46" ]
+"yalefaces/subject03.surprised"[image="yalefaces/subject03.surprised", label=""];
+"yalefaces/subject03.surprised"->"yalefaces/subject03.normal"[minlen=1 label="1075.43" ]
+"yalefaces/subject09.happy"[image="yalefaces/subject09.happy", label=""];
+"yalefaces/subject09.happy"->"yalefaces/subject08.happy"[minlen=1 label="1524.88" ]
+"yalefaces/subject09.happy"->"yalefaces/subject09.noglasses"[minlen=0 label="608.475" ]
+"yalefaces/subject09.noglasses"[image="yalefaces/subject09.noglasses", label=""];
+"yalefaces/subject09.noglasses"->"yalefaces/subject09.normal"[minlen=0 label="0" ]
+"yalefaces/subject09.noglasses"->"yalefaces/subject09.sleepy"[minlen=0 label="601.735" ]
+"yalefaces/subject09.normal"[image="yalefaces/subject09.normal", label=""];
+"yalefaces/subject09.sleepy"[image="yalefaces/subject09.sleepy", label=""];
+"yalefaces/subject09.sad"[image="yalefaces/subject09.sad", label=""];
+"yalefaces/subject09.sad"->"yalefaces/subject09.normal"[minlen=0 label="633.807" ]
+"yalefaces/subject09.wink"[image="yalefaces/subject09.wink", label=""];
+"yalefaces/subject09.wink"->"yalefaces/subject09.sleepy"[minlen=0 label="644.974" ]
+"yalefaces/subject09.surprised"[image="yalefaces/subject09.surprised", label=""];
+"yalefaces/subject09.surprised"->"yalefaces/subject09.wink"[minlen=0 label="649.699" ]
+"yalefaces/subject08.noglasses"[image="yalefaces/subject08.noglasses", label=""];
+"yalefaces/subject08.noglasses"->"yalefaces/subject08.happy"[minlen=1 label="1530.84" ]
+"yalefaces/subject08.noglasses"->"yalefaces/subject08.wink"[minlen=1 label="1410.23" ]
+"yalefaces/subject08.wink"[image="yalefaces/subject08.wink", label=""];
+"yalefaces/subject07.centerlight"[image="yalefaces/subject07.centerlight", label=""];
+"yalefaces/subject10.surprised"[image="yalefaces/subject10.surprised", label=""];
+"yalefaces/subject10.surprised"->"yalefaces/subject08.wink"[minlen=1 label="1574.55" ]
+"yalefaces/subject10.noglasses"[image="yalefaces/subject10.noglasses", label=""];
+"yalefaces/subject10.noglasses"->"yalefaces/subject10.surprised"[minlen=0 label="559.149" ]
+"yalefaces/subject10.noglasses"->"yalefaces/subject10.sad"[minlen=0 label="377.229" ]
+"yalefaces/subject10.noglasses"->"yalefaces/subject10.wink"[minlen=0 label="557.204" ]
+"yalefaces/subject10.sad"[image="yalefaces/subject10.sad", label=""];
+"yalefaces/subject10.sad"->"yalefaces/subject10.sleepy"[minlen=0 label="221.159" ]
+"yalefaces/subject10.sleepy"[image="yalefaces/subject10.sleepy", label=""];
+"yalefaces/subject10.sleepy"->"yalefaces/subject10.happy"[minlen=0 label="389.097" ]
+"yalefaces/subject10.happy"[image="yalefaces/subject10.happy", label=""];
+"yalefaces/subject10.wink"[image="yalefaces/subject10.wink", label=""];
+"yalefaces/subject10.wink"->"yalefaces/subject10.normal"[minlen=0 label="678.13" ]
+"yalefaces/subject10.normal"[image="yalefaces/subject10.normal", label=""];
+"yalefaces/subject03.glasses"[image="yalefaces/subject03.glasses", label=""];
+"yalefaces/subject03.glasses"->"yalefaces/subject07.happy"[minlen=1 label="1897.73" ]
+"yalefaces/subject03.centerlight"[image="yalefaces/subject03.centerlight", label=""];
+"yalefaces/subject03.centerlight"->"yalefaces/subject03.glasses"[minlen=1 label="1990.45" ]
+"yalefaces/subject13.centerlight"[image="yalefaces/subject13.centerlight", label=""];
+"yalefaces/subject13.centerlight"->"yalefaces/subject03.wink"[minlen=2 label="2137.75" ]
+"yalefaces/subject10.glasses"[image="yalefaces/subject10.glasses", label=""];
+"yalefaces/subject10.glasses"->"yalefaces/subject03.centerlight"[minlen=2 label="2200.1" ]
+"yalefaces/subject10.centerlight"[image="yalefaces/subject10.centerlight", label=""];
+"yalefaces/subject10.centerlight"->"yalefaces/subject10.glasses"[minlen=1 label="1737.75" ]
+"yalefaces/subject04.centerlight"[image="yalefaces/subject04.centerlight", label=""];
+"yalefaces/subject04.centerlight"->"yalefaces/subject10.centerlight"[minlen=1 label="1909.65" ]
+"yalefaces/subject04.centerlight"->"yalefaces/subject04.noglasses"[minlen=1 label="1535.84" ]
+"yalefaces/subject04.noglasses"[image="yalefaces/subject04.noglasses", label=""];
+"yalefaces/subject04.noglasses"->"yalefaces/subject04.surprised"[minlen=0 label="707.047" ]
+"yalefaces/subject04.surprised"[image="yalefaces/subject04.surprised", label=""];
+"yalefaces/subject04.surprised"->"yalefaces/subject04.wink"[minlen=0 label="539.97" ]
+"yalefaces/subject04.wink"[image="yalefaces/subject04.wink", label=""];
+"yalefaces/subject04.happy"[image="yalefaces/subject04.happy", label=""];
+"yalefaces/subject04.happy"->"yalefaces/subject04.surprised"[minlen=0 label="600.494" ]
+"yalefaces/subject04.glasses"[image="yalefaces/subject04.glasses", label=""];
+"yalefaces/subject04.glasses"->"yalefaces/subject04.happy"[minlen=0 label="644.11" ]
+"yalefaces/subject04.glasses"->"yalefaces/subject04.sleepy"[minlen=0 label="612.775" ]
+"yalefaces/subject04.glasses"->"yalefaces/subject02.glasses"[minlen=2 label="2382.31" ]
+"yalefaces/subject04.sleepy"[image="yalefaces/subject04.sleepy", label=""];
+"yalefaces/subject04.sad"[image="yalefaces/subject04.sad", label=""];
+"yalefaces/subject04.sad"->"yalefaces/subject04.happy"[minlen=0 label="711.24" ]
+"yalefaces/subject04.normal"[image="yalefaces/subject04.normal", label=""];
+"yalefaces/subject04.normal"->"yalefaces/subject04.sad"[minlen=0 label="0" ]
+"yalefaces/subject01.gif"[image="yalefaces/subject01.gif", label=""];
+"yalefaces/subject01.gif"->"yalefaces/subject04.centerlight"[minlen=2 label="2198.22" ]
+"yalefaces/subject01.gif"->"yalefaces/subject11.surprised"[minlen=3 label="3544.12" ]
+"yalefaces/subject02.centerlight"[image="yalefaces/subject02.centerlight", label=""];
+"yalefaces/subject02.glasses"[image="yalefaces/subject02.glasses", label=""];
+"yalefaces/subject02.glasses"->"yalefaces/subject02.wink"[minlen=0 label="957.638" ]
+"yalefaces/subject02.wink"[image="yalefaces/subject02.wink", label=""];
+"yalefaces/subject02.wink"->"yalefaces/subject02.surprised"[minlen=1 label="1381.2" ]
+"yalefaces/subject02.sleepy"[image="yalefaces/subject02.sleepy", label=""];
+"yalefaces/subject02.sleepy"->"yalefaces/subject02.wink"[minlen=0 label="690.346" ]
+"yalefaces/subject02.noglasses"[image="yalefaces/subject02.noglasses", label=""];
+"yalefaces/subject02.noglasses"->"yalefaces/subject02.sleepy"[minlen=0 label="98.9522" ]
+"yalefaces/subject02.noglasses"->"yalefaces/subject02.normal"[minlen=0 label="0" ]
+"yalefaces/subject02.normal"[image="yalefaces/subject02.normal", label=""];
+"yalefaces/subject02.sad"[image="yalefaces/subject02.sad", label=""];
+"yalefaces/subject02.sad"->"yalefaces/subject02.normal"[minlen=0 label="523.853" ]
+"yalefaces/subject02.happy"[image="yalefaces/subject02.happy", label=""];
+"yalefaces/subject02.happy"->"yalefaces/subject02.sad"[minlen=0 label="780.791" ]
+"yalefaces/subject02.surprised"[image="yalefaces/subject02.surprised", label=""];
+"yalefaces/subject12.sad"[image="yalefaces/subject12.sad", label=""];
+"yalefaces/subject12.sad"->"yalefaces/subject08.surprised"[minlen=2 label="2461.17" ]
+"yalefaces/subject12.sad"->"yalefaces/subject12.sleepy"[minlen=0 label="489.234" ]
+"yalefaces/subject12.sleepy"[image="yalefaces/subject12.sleepy", label=""];
+"yalefaces/subject12.happy"[image="yalefaces/subject12.happy", label=""];
+"yalefaces/subject12.happy"->"yalefaces/subject12.sad"[minlen=1 label="1183.17" ]
+"yalefaces/subject12.happy"->"yalefaces/subject12.surprised"[minlen=1 label="1173.26" ]
+"yalefaces/subject12.surprised"[image="yalefaces/subject12.surprised", label=""];
+"yalefaces/subject12.surprised"->"yalefaces/subject12.wink"[minlen=0 label="650.187" ]
+"yalefaces/subject12.wink"[image="yalefaces/subject12.wink", label=""];
+"yalefaces/subject12.wink"->"yalefaces/subject12.glasses"[minlen=1 label="1455.98" ]
+"yalefaces/subject12.glasses"[image="yalefaces/subject12.glasses", label=""];
+"yalefaces/subject15.surprised"[image="yalefaces/subject15.surprised", label=""];
+"yalefaces/subject15.surprised"->"yalefaces/subject08.noglasses"[minlen=2 label="2509.37" ]
+"yalefaces/subject15.noglasses"[image="yalefaces/subject15.noglasses", label=""];
+"yalefaces/subject15.noglasses"->"yalefaces/subject15.surprised"[minlen=0 label="645.532" ]
+"yalefaces/subject15.noglasses"->"yalefaces/subject15.sleepy"[minlen=0 label="237.463" ]
+"yalefaces/subject15.sleepy"[image="yalefaces/subject15.sleepy", label=""];
+"yalefaces/subject15.glasses"[image="yalefaces/subject15.glasses", label=""];
+"yalefaces/subject15.glasses"->"yalefaces/subject15.noglasses"[minlen=1 label="1195.33" ]
+"yalefaces/subject09.centerlight"[image="yalefaces/subject09.centerlight", label=""];
+"yalefaces/subject12.normal"[image="yalefaces/subject12.normal", label=""];
+"yalefaces/subject12.normal"->"yalefaces/subject12.glasses"[minlen=2 label="2899.33" ]
+"yalefaces/subject12.normal"->"yalefaces/subject12.noglasses"[minlen=0 label="0" ]
+"yalefaces/subject12.noglasses"[image="yalefaces/subject12.noglasses", label=""];
+"yalefaces/subject12.noglasses"->"yalefaces/subject05.leftlight"[minlen=4 label="4031.62" ]
+"yalefaces/subject14.sleepy"[image="yalefaces/subject14.sleepy", label=""];
+"yalefaces/subject14.sleepy"->"yalefaces/subject08.sleepy"[minlen=3 label="3075.77" ]
+"yalefaces/subject14.noglasses"[image="yalefaces/subject14.noglasses", label=""];
+"yalefaces/subject14.noglasses"->"yalefaces/subject14.sleepy"[minlen=0 label="492.715" ]
+"yalefaces/subject14.noglasses"->"yalefaces/subject14.normal"[minlen=0 label="0" ]
+"yalefaces/subject14.normal"[image="yalefaces/subject14.normal", label=""];
+"yalefaces/subject14.wink"[image="yalefaces/subject14.wink", label=""];
+"yalefaces/subject14.wink"->"yalefaces/subject14.normal"[minlen=0 label="780.104" ]
+"yalefaces/subject14.surprised"[image="yalefaces/subject14.surprised", label=""];
+"yalefaces/subject14.surprised"->"yalefaces/subject14.wink"[minlen=0 label="686.642" ]
+"yalefaces/subject14.surprised"->"yalefaces/subject14.happy"[minlen=0 label="900.597" ]
+"yalefaces/subject14.sad"[image="yalefaces/subject14.sad", label=""];
+"yalefaces/subject14.sad"->"yalefaces/subject14.surprised"[minlen=0 label="749.502" ]
+"yalefaces/subject14.happy"[image="yalefaces/subject14.happy", label=""];
+"yalefaces/subject14.centerlight"[image="yalefaces/subject14.centerlight", label=""];
+"yalefaces/subject14.centerlight"->"yalefaces/subject14.happy"[minlen=0 label="670.295" ]
+"yalefaces/subject14.centerlight"->"yalefaces/subject06.centerlight"[minlen=3 label="3589.06" ]
+"yalefaces/subject14.centerlight"->"yalefaces/subject06.normal"[minlen=5 label="5002.99" ]
+"yalefaces/subject14.glasses"[image="yalefaces/subject14.glasses", label=""];
+"yalefaces/subject14.glasses"->"yalefaces/subject14.wink"[minlen=0 label="929.503" ]
+"yalefaces/subject11.surprised"[image="yalefaces/subject11.surprised", label=""];
+"yalefaces/subject11.normal"[image="yalefaces/subject11.normal", label=""];
+"yalefaces/subject11.normal"->"yalefaces/subject11.surprised"[minlen=1 label="1471.89" ]
+"yalefaces/subject11.normal"->"yalefaces/subject11.sad"[minlen=2 label="2119.65" ]
+"yalefaces/subject11.happy"[image="yalefaces/subject11.happy", label=""];
+"yalefaces/subject11.happy"->"yalefaces/subject11.normal"[minlen=0 label="979.195" ]
+"yalefaces/subject11.glasses"[image="yalefaces/subject11.glasses", label=""];
+"yalefaces/subject11.glasses"->"yalefaces/subject11.normal"[minlen=1 label="1544.99" ]
+"yalefaces/subject11.glasses"->"yalefaces/subject11.sleepy"[minlen=0 label="996.263" ]
+"yalefaces/subject11.sleepy"[image="yalefaces/subject11.sleepy", label=""];
+"yalefaces/subject11.sleepy"->"yalefaces/subject11.wink"[minlen=0 label="446.356" ]
+"yalefaces/subject11.wink"[image="yalefaces/subject11.wink", label=""];
+"yalefaces/subject11.noglasses"[image="yalefaces/subject11.noglasses", label=""];
+"yalefaces/subject11.noglasses"->"yalefaces/subject11.sleepy"[minlen=0 label="587.317" ]
+"yalefaces/subject11.centerlight"[image="yalefaces/subject11.centerlight", label=""];
+"yalefaces/subject11.centerlight"->"yalefaces/subject11.glasses"[minlen=1 label="1679.36" ]
+"yalefaces/subject11.sad"[image="yalefaces/subject11.sad", label=""];
+"yalefaces/subject06.centerlight"[image="yalefaces/subject06.centerlight", label=""];
+"yalefaces/subject05.leftlight"[image="yalefaces/subject05.leftlight", label=""];
+"yalefaces/subject05.leftlight"->"yalefaces/subject12.leftlight"[minlen=1 label="1389.46" ]
+"yalefaces/subject05.leftlight"->"yalefaces/subject09.leftlight"[minlen=2 label="2333.9" ]
+"yalefaces/subject12.leftlight"[image="yalefaces/subject12.leftlight", label=""];
+"yalefaces/subject09.leftlight"[image="yalefaces/subject09.leftlight", label=""];
+"yalefaces/subject02.leftlight"[image="yalefaces/subject02.leftlight", label=""];
+"yalefaces/subject02.leftlight"->"yalefaces/subject12.leftlight"[minlen=2 label="2571.87" ]
+"yalefaces/subject03.leftlight"[image="yalefaces/subject03.leftlight", label=""];
+"yalefaces/subject03.leftlight"->"yalefaces/subject09.leftlight"[minlen=3 label="3057.06" ]
+"yalefaces/subject03.leftlight"->"yalefaces/subject07.leftlight"[minlen=2 label="2556.98" ]
+"yalefaces/subject07.leftlight"[image="yalefaces/subject07.leftlight", label=""];
+"yalefaces/subject07.leftlight"->"yalefaces/subject15.leftlight"[minlen=1 label="1594.97" ]
+"yalefaces/subject15.leftlight"[image="yalefaces/subject15.leftlight", label=""];
+"yalefaces/subject15.leftlight"->"yalefaces/subject08.leftlight"[minlen=3 label="3108.52" ]
+"yalefaces/subject11.leftlight"[image="yalefaces/subject11.leftlight", label=""];
+"yalefaces/subject11.leftlight"->"yalefaces/subject15.leftlight"[minlen=2 label="2559.02" ]
+"yalefaces/subject08.leftlight"[image="yalefaces/subject08.leftlight", label=""];
+"yalefaces/subject08.leftlight"->"yalefaces/subject10.leftlight"[minlen=3 label="3044.12" ]
+"yalefaces/subject08.leftlight"->"yalefaces/subject06.leftlight"[minlen=3 label="3758.32" ]
+"yalefaces/subject10.leftlight"[image="yalefaces/subject10.leftlight", label=""];
+"yalefaces/subject04.leftlight"[image="yalefaces/subject04.leftlight", label=""];
+"yalefaces/subject04.leftlight"->"yalefaces/subject10.leftlight"[minlen=1 label="1702.11" ]
+"yalefaces/subject01.leftlight"[image="yalefaces/subject01.leftlight", label=""];
+"yalefaces/subject01.leftlight"->"yalefaces/subject10.leftlight"[minlen=2 label="2695.85" ]
+"yalefaces/subject06.leftlight"[image="yalefaces/subject06.leftlight", label=""];
+"yalefaces/subject11.rightlight"[image="yalefaces/subject11.rightlight", label=""];
+"yalefaces/subject11.rightlight"->"yalefaces/subject11.centerlight"[minlen=4 label="4254.51" ]
+"yalefaces/subject10.rightlight"[image="yalefaces/subject10.rightlight", label=""];
+"yalefaces/subject10.rightlight"->"yalefaces/subject10.happy"[minlen=4 label="4298.56" ]
+"yalefaces/subject02.rightlight"[image="yalefaces/subject02.rightlight", label=""];
+"yalefaces/subject02.rightlight"->"yalefaces/subject10.rightlight"[minlen=3 label="3297.68" ]
+"yalefaces/subject13.leftlight"[image="yalefaces/subject13.leftlight", label=""];
+"yalefaces/subject13.leftlight"->"yalefaces/subject07.leftlight"[minlen=4 label="4566.87" ]
+"yalefaces/subject06.normal"[image="yalefaces/subject06.normal", label=""];
+"yalefaces/subject06.noglasses"[image="yalefaces/subject06.noglasses", label=""];
+"yalefaces/subject06.noglasses"->"yalefaces/subject06.normal"[minlen=0 label="0" ]
+"yalefaces/subject06.happy"[image="yalefaces/subject06.happy", label=""];
+"yalefaces/subject06.happy"->"yalefaces/subject06.normal"[minlen=0 label="463.12" ]
+"yalefaces/subject06.happy"->"yalefaces/subject06.sad"[minlen=0 label="625.988" ]
+"yalefaces/subject06.sad"[image="yalefaces/subject06.sad", label=""];
+"yalefaces/subject06.sad"->"yalefaces/subject06.wink"[minlen=0 label="606.202" ]
+"yalefaces/subject06.wink"[image="yalefaces/subject06.wink", label=""];
+"yalefaces/subject06.wink"->"yalefaces/subject06.rightlight"[minlen=3 label="3197.92" ]
+"yalefaces/subject06.sleepy"[image="yalefaces/subject06.sleepy", label=""];
+"yalefaces/subject06.sleepy"->"yalefaces/subject06.sad"[minlen=1 label="1025.58" ]
+"yalefaces/subject06.sleepy"->"yalefaces/subject06.surprised"[minlen=1 label="1313.45" ]
+"yalefaces/subject06.surprised"[image="yalefaces/subject06.surprised", label=""];
+"yalefaces/subject06.glasses"[image="yalefaces/subject06.glasses", label=""];
+"yalefaces/subject06.glasses"->"yalefaces/subject06.surprised"[minlen=0 label="640.254" ]
+"yalefaces/subject06.rightlight"[image="yalefaces/subject06.rightlight", label=""];
+"yalefaces/subject14.rightlight"[image="yalefaces/subject14.rightlight", label=""];
+"yalefaces/subject14.rightlight"->"yalefaces/subject06.glasses"[minlen=3 label="3411.47" ]
+"yalefaces/subject14.rightlight"->"yalefaces/subject15.rightlight"[minlen=4 label="4641.07" ]
+"yalefaces/subject15.rightlight"[image="yalefaces/subject15.rightlight", label=""];
+"yalefaces/subject07.rightlight"[image="yalefaces/subject07.rightlight", label=""];
+"yalefaces/subject07.rightlight"->"yalefaces/subject15.rightlight"[minlen=2 label="2608.89" ]
+"yalefaces/subject08.rightlight"[image="yalefaces/subject08.rightlight", label=""];
+"yalefaces/subject08.rightlight"->"yalefaces/subject15.rightlight"[minlen=3 label="3025.86" ]
+"yalefaces/subject09.rightlight"[image="yalefaces/subject09.rightlight", label=""];
+"yalefaces/subject09.rightlight"->"yalefaces/subject15.rightlight"[minlen=3 label="3217.47" ]
+"yalefaces/subject13.rightlight"[image="yalefaces/subject13.rightlight", label=""];
+"yalefaces/subject13.rightlight"->"yalefaces/subject07.rightlight"[minlen=3 label="3374.11" ]
+"yalefaces/subject03.rightlight"[image="yalefaces/subject03.rightlight", label=""];
+"yalefaces/subject03.rightlight"->"yalefaces/subject15.rightlight"[minlen=4 label="4154.03" ]
+"yalefaces/subject03.rightlight"->"yalefaces/subject05.rightlight"[minlen=2 label="2266.08" ]
+"yalefaces/subject03.rightlight"->"yalefaces/subject04.rightlight"[minlen=2 label="2443.56" ]
+"yalefaces/subject05.rightlight"[image="yalefaces/subject05.rightlight", label=""];
+"yalefaces/subject04.rightlight"[image="yalefaces/subject04.rightlight", label=""];
+"yalefaces/subject01.rightlight"[image="yalefaces/subject01.rightlight", label=""];
+"yalefaces/subject01.rightlight"->"yalefaces/subject04.rightlight"[minlen=1 label="1704.09" ]
+"yalefaces/subject14.leftlight"[image="yalefaces/subject14.leftlight", label=""];
+"yalefaces/subject14.leftlight"->"yalefaces/subject13.leftlight"[minlen=5 label="5222.6" ]
  }
